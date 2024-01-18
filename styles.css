@@ -1,0 +1,123 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+#logo{
+    display: flex;
+}
+header {
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 50px;
+}
+.title h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1px;
+    box-shadow: 0px 25px 20px -15px #a11e52;
+    font-family: 'Nunito';
+    margin-bottom: 0%;  
+
+}
+
+nav ul {
+    margin-top: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    box-shadow: 0px 25px 20px -20px rgba(219, 212, 209, 0.45);
+}
+
+nav li {
+    
+    margin-right: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px ;
+    transition :all 0.3s ease-in-out;
+    
+}
+
+nav a:hover {
+    color: #ecc82b;
+    padding:10px;
+}
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    padding: 2px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans egular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-file-upload {
+    color: #f8f8f8;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 20px;
+    background-color: #F7CE68;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    border-color: transparent;
+}
+button:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+button:hover {
+    background-color: #fd8b00;
+}
+button:active{
+    transform: scale(1);
+    transition: 0.2s;
+}
+#mainheading{
+    font-family: 'Nunito';
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

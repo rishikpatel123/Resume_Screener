@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screener</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+</head>
+<body>
+    <header> 
+        <nav>
+            <img id="logo" src="logo2.png" alt="Image" width="500" height="150" >
+            <ul>
+                <li><a href="MainPage.html">Home</a></li>
+                <li><a href="https://www.google.com/">Contact Us</a></li>
+                <li><a href="">About Us</a></li >
+                    <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <div class="Resume Screener">
+            <h1 id="mainheading">Resume Screener</h1>
+        </div>
+    </header>
+    <p>Upload your resume to get started!</p>
+    <div class="container">
+        <form type="button">
+            
+            <input type="file" id="resumeInput" name="resumes" multiple required>
+            <button type="submit" onclick="screenResumes()">Submit</button>
+        </form>
+        <br>
+        <br>
+        <label for="keyword">Keyword:</label>
+        <input type="text" id="keywordInput" name="keyword" required>
+    </div>
+    <label id="results"></label>
+    <script src="script.js"></script>
+</body>
+</html>
