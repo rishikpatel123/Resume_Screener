@@ -17,4 +17,3 @@ rest files in main project folder
 you're good to go just Open cmd select path fo your project folder
 and run the app.py file using command "python app.py" (python must be installed)
 Feel free to connect for any issues and suggestions.
-
