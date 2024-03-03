@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screener</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <header> 
+        <nav>
+            <img id="logo" src="{{ url_for('static', filename='images/logo2.png') }}" alt="Image" width="500" height="150" >
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('privacy') }}">Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <div class="Resume Screener">
+            <h1 id="mainheading">Resume Screener</h1>
+        </div>
+    </header>
+    <p>Upload your resume to get started!<br> (Upload Pdf, Doc, docx files only)</p>
+    <div class="container">
+        <form id="resumeForm" action="{{ url_for('run_script') }}" method="post" enctype="multipart/form-data">
+            <input type="file" id="resumeInput" name="files[]" multiple required>
+            <input type="text" id="keywordInput" name="keywords" placeholder="Enter keywords (comma-separated)" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
